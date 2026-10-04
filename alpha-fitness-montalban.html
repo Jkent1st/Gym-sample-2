@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Alpha Fitness Montalban | Earn your alpha</title>
+<meta name="description" content="Boxing, Muay Thai and MMA with professional coaches at Alpha Fitness in Montalban, Rizal.">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111214;--bg2:#1a1c1f;--bg3:#232629;--ink:#f4f4f2;--mute:#a4a8ae;--acc:#ff5a1f;--accd:#e04810;--line:#2e3236;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 Barlow,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;font-weight:900;line-height:.95;text-transform:uppercase}
+a{color:inherit}img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;background:var(--acc);color:#0d0d0d;font:600 16px Barlow,sans-serif;border-radius:6px;border:2px solid var(--acc);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{background:var(--accd);border-color:var(--accd);transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,90,31,.28)}
+.btn.ghost{background:none;color:var(--ink);border-color:#4a4f55}
+.btn.ghost:hover{background:var(--bg3);box-shadow:none}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.sample{font-size:11px;font-weight:600;background:var(--bg3);color:var(--mute);border-radius:3px;padding:2px 7px;vertical-align:middle;letter-spacing:.04em}
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(17,18,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:900 24px 'Big Shoulders Display',Impact,sans-serif;text-decoration:none;text-transform:uppercase}
+.logo i{color:var(--acc);font-style:normal}
+.links{display:flex;align-items:center;gap:26px}
+.links a:not(.btn){text-decoration:none;font-weight:500;color:var(--mute)}
+.links a:not(.btn):hover{color:var(--ink)}
+.links .btn{min-height:42px;padding:0 20px}
+.burger{display:none;background:none;border:2px solid var(--line);color:var(--ink);width:46px;height:46px;border-radius:6px;font-size:22px;cursor:pointer}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;padding:64px 0 76px;background:radial-gradient(60% 70% at 85% 30%,rgba(255,90,31,.16),transparent 70%)}
+.hero h1{font-size:clamp(56px,9vw,116px)}
+.hero p.lead{color:var(--mute);font-size:19px;max-width:46ch;margin:22px 0 28px}
+.hero .note{margin-top:18px;font-size:14px;color:var(--mute)}
+.rig{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.alpha{font:900 160px/.8 'Big Shoulders Display',Impact,sans-serif;color:var(--acc);text-align:center;transition:transform .25s}
+.bar{height:14px;background:linear-gradient(#d4d9e0,#7d8590);border-radius:7px;margin:8px -6px;position:relative}
+.stack{display:flex;align-items:center;gap:3px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.pl{width:12px;border-radius:3px;animation:pop .2s}
+@keyframes pop{from{transform:scaleY(.2);opacity:0}}
+.total{display:flex;justify-content:space-between;align-items:baseline;margin:34px 0 8px}
+.total strong{font:900 52px 'Big Shoulders Display',Impact,sans-serif;line-height:1}
+.total span{color:var(--mute);font-size:14px}
+#msg{color:var(--acc);font-weight:600;min-height:1.7em}
+.plates{display:flex;gap:8px;margin-top:10px}
+.plates button{flex:1;min-height:48px;border-radius:6px;border:2px solid var(--line);background:none;color:var(--ink);font:600 15px Barlow,sans-serif;cursor:pointer}
+.plates button:hover{border-color:var(--acc)}
+.mini{background:none;border:0;color:var(--mute);text-decoration:underline;font:inherit;font-size:14px;margin-top:10px;cursor:pointer;min-height:36px}
+/* trust */
+.trust{background:var(--bg2);border-block:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-block:34px;text-align:center}
+.trust b{display:block;font:900 clamp(38px,5vw,56px)/1 'Big Shoulders Display',Impact,sans-serif;color:var(--acc)}
+.trust span{color:var(--mute);font-size:15px}
+/* sections */
+section{padding:84px 0}
+section.alt{background:var(--bg2)}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-size:clamp(40px,6vw,68px)}
+.head p{color:var(--mute);margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:26px;transition:transform .2s,border-color .2s}
+section.alt .card{background:var(--bg)}
+.card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.card h3{font-size:30px;margin-bottom:10px}
+.card p{color:var(--mute)}
+.card small{display:block;margin-top:14px;color:var(--acc);font-weight:600}
+.avatar{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--acc),#7a2a0c);display:grid;place-items:center;font:900 32px 'Big Shoulders Display',sans-serif;margin-bottom:16px}
+/* pricing */
+.price .card{display:flex;flex-direction:column;position:relative}
+.price .hot{border:2px solid var(--acc);background:linear-gradient(180deg,rgba(255,90,31,.12),var(--bg2) 60%);transform:scale(1.03)}
+.badge{position:absolute;top:-13px;left:22px;background:var(--acc);color:#0d0d0d;font-weight:600;font-size:13px;padding:3px 12px;border-radius:20px}
+.amt{font:900 56px/1 'Big Shoulders Display',sans-serif;margin:8px 0 2px}
+.amt small{font:500 15px Barlow,sans-serif;color:var(--mute);display:inline;margin:0}
+.price ul{list-style:none;padding:0;margin:18px 0 26px;flex:1}
+.price li{padding:7px 0 7px 26px;position:relative;color:var(--mute);border-top:1px solid var(--line)}
+.price li:before{content:"";position:absolute;left:4px;top:15px;width:10px;height:6px;border-left:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(-45deg)}
+/* quotes */
+.q p{color:var(--ink);font-size:18px}
+.stars{color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.who{margin-top:16px;color:var(--mute);font-size:15px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:12px}
+.shot{position:relative;border-radius:10px;overflow:hidden;background:linear-gradient(140deg,var(--bg3),#0e0f10);border:1px solid var(--line);display:flex;align-items:flex-end;padding:14px;font-weight:600;background-size:cover;background-position:center;transition:transform .25s}
+.shot:hover{transform:scale(1.015)}
+.shot:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,90,31,.2),transparent 60%)}
+.shot span{position:relative}
+.s1{grid-column:span 2;grid-row:span 2}.s4{grid-row:span 2}.s5{grid-column:span 2}
+/* location + faq + form */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:8px 24px;margin:18px 0 24px;color:var(--mute)}
+dt{color:var(--ink);font-weight:600}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;min-height:30px}
+summary:after{content:"+";color:var(--acc);font-size:24px;line-height:1}
+details[open] summary:after{content:"\2212"}
+details p{color:var(--mute);margin-top:10px;max-width:60ch}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:15px;display:grid;gap:6px}
+input,select{background:var(--bg);color:var(--ink);border:2px solid var(--line);border-radius:6px;min-height:48px;padding:0 14px;font:inherit}
+input:focus,select:focus{border-color:var(--acc);outline:0}
+#fm{color:var(--acc);font-weight:600;min-height:1.6em}
+.join{background:linear-gradient(135deg,#ff5a1f,#c7340a);color:#0d0d0d}
+.join .head p{color:#2b1307}
+.join .card{background:var(--bg);color:var(--ink)}
+footer{padding:34px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+ .links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;padding:10px 22px 22px;border-bottom:1px solid var(--line)}
+ .links.open{display:flex}
+ .links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line);font-size:18px}
+ .links .btn{margin-top:16px;min-height:52px}
+ .burger{display:block}
+ .hero,.two{grid-template-columns:1fr}.hero{padding-top:36px}
+ .alpha{font-size:120px}
+ .trust .wrap{grid-template-columns:1fr 1fr;row-gap:24px}
+ section{padding:60px 0}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}.s1{grid-column:span 2}.s5{grid-column:span 2}
+ .price .hot{transform:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#home">Alpha<i>Fitness</i></a>
+<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="lk">&#9776;</button>
+<nav class="links" id="lk" aria-label="Main">
+<a href="#home">Home</a><a href="#about">About</a><a href="#classes">Classes</a><a href="#trainers">Trainers</a><a href="#membership">Membership</a><a href="#contact">Contact</a>
+<a class="btn" href="#join">Join now</a>
+</nav></div></header>
+
+<main id="home">
+<div class="wrap hero">
+<div>
+<h1>Earn your alpha.</h1>
+<p class="lead">Boxing. Muay Thai. MMA. Train under professional coaches in Montalban, Rizal, whether you want to fight, get fit, or finally learn how to throw a proper punch.</p>
+<div class="row"><a class="btn" href="#join">Join now</a><a class="btn ghost" href="#membership">View memberships</a></div>
+<p class="note">Book a free trial session. Beginners welcome, no experience needed.</p>
+</div>
+<div class="rig" aria-label="Interactive barbell loader">
+<div class="alpha" id="al" aria-hidden="true">&alpha;</div>
+<div class="bar"><div class="stack" id="st"></div></div>
+<div class="total"><strong id="kg">20 kg</strong><span>Empty bar: 20 kg</span></div>
+<div id="msg" aria-live="polite"></div>
+<div class="plates" role="group" aria-label="Add plates per side"><button data-w="5">+5</button><button data-w="10">+10</button><button data-w="15">+15</button><button data-w="20">+20</button></div>
+<button class="mini" id="rs">Clear the bar</button>
+</div>
+</div>
+
+<div class="trust"><div class="wrap" id="stats"></div></div>
+
+<section id="about"><div class="wrap">
+<div class="head rv"><h2>Built like a fight camp.</h2><p>Alpha is for first-timers and future fighters alike. You get professional coaches, real combat sports training, and training partners who expect you back tomorrow.</p></div>
+<div class="cards" id="why"></div>
+</div></section>
+
+<section class="alt" id="classes"><div class="wrap">
+<div class="head rv"><h2>Pick your discipline</h2><p>Three combat sports under one roof. Class times are confirmed with the front desk.</p></div>
+<div class="cards" id="cls"></div>
+</div></section>
+
+<section id="trainers"><div class="wrap">
+<div class="head rv"><h2>Professional coaches.</h2><p>Meet the people who will sharpen your technique and keep you honest. <span class="sample">Sample profiles</span></p></div>
+<div class="cards" id="tr"></div>
+</div></section>
+
+<section class="alt price" id="membership"><div class="wrap">
+<div class="head rv"><h2>Pick your plan</h2><p>Simple pricing, no hidden fees. <span class="sample">Sample prices, replace with real rates</span></p></div>
+<div class="cards" id="pr"></div>
+</div></section>
+
+<section id="results"><div class="wrap">
+<div class="head rv"><h2>Members talk.</h2><p><span class="sample">Sample reviews, replace with real ones</span></p></div>
+<div class="cards" id="qs"></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<div class="head rv"><h2>Inside Alpha</h2><p>Swap each tile for a real photo. Set its background-image and it fills the space.</p></div>
+<div class="gal" id="gl"></div>
+</div></section>
+
+<section id="contact"><div class="wrap two">
+<div class="rv"><div class="head" style="margin-bottom:0"><h2>Find us</h2></div>
+<dl><dt>Location</dt><dd>Montalban (Rodriguez), Rizal</dd><dt>Hours</dt><dd>[Add opening hours] <span class="sample">Sample</span></dd><dt>Phone</dt><dd>[Add number] <span class="sample">Sample</span></dd></dl>
+<div class="row"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Alpha+Fitness+Montalban+Rizal">Get directions</a><a class="btn ghost" target="_blank" rel="noopener" href="https://www.instagram.com/alphafitnessmontalban">Instagram</a></div></div>
+<div class="rv"><div class="head" style="margin-bottom:10px"><h2>Questions</h2></div>
+<div id="fq"></div></div>
+</div></section>
+
+<section class="join" id="join"><div class="wrap two">
+<div class="head rv" style="margin:0"><h2>Start your free trial.</h2><p>Tell us what you want to train. We'll reply with a time for your first session.</p></div>
+<div class="card rv"><form id="f" novalidate>
+<label>Your name<input id="n" autocomplete="name" required></label>
+<label>Phone or email<input id="c" autocomplete="email" required></label>
+<label>Main goal<select id="g"><option>Learn boxing</option><option>Learn Muay Thai</option><option>Learn MMA</option><option>Get fit</option><option>Train to compete</option></select></label>
+<button class="btn" type="submit">Book my free trial</button>
+<div id="fm" aria-live="polite"></div>
+</form></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>&copy; Alpha Fitness Montalban</span><span>Concept design sample</span></div></footer>
+
+<script>
+(function(){
+/* EDIT HERE: replace sample content with real details */
+var D={
+stats:[[250,"+","Members","Sample"],[5,"","Years open","Sample"],[3,"","Certified coaches","Sample"],[48,"","Average rating x10 (4.8)","Sample"]],
+why:[["Professional coaches","Learn from coaches with real combat sports experience who correct your technique, not just count your rounds."],["Three disciplines","Boxing, Muay Thai and MMA in one gym, so you can specialize or mix them."],["For every level","Total beginners and competitors train side by side, with coaching matched to your level."]],
+cls:[["Boxing","Footwork, jabs, combinations and defense. Sharpen your hands and your timing.","Beginner to advanced"],["Muay Thai","Punches, kicks, knees and elbows. The art of eight limbs.","Beginner to advanced"],["MMA","Striking, takedowns and ground work combined into one complete skill set.","Beginner to advanced"]],
+tr:[["Coach One","Boxing","8 years","Builds sharp hands and solid footwork."],["Coach Two","Muay Thai","7 years","Teaches clean kicks, knees and clinch."],["Coach Three","MMA","6 years","Blends striking and grappling for fight-ready skills."]],
+pr:[["Basic","\u20b1800","/month",["Open gym access","Locker use","Free orientation"],"Choose Basic"],["Alpha","\u20b11,500","/month",["Everything in Basic","Boxing, Muay Thai and MMA classes","Coach feedback on your technique","Monthly progress check-in"],"Choose Alpha",1],["Annual","\u20b112,000","/year",["Everything in Alpha","2 months free","Guest passes"],"Choose Annual"]],
+qs:[["Member name","Joined 6 months ago. Result: first sparring round, no fear.","Sample review text goes here."],["Member name","Joined 1 year ago. Result: lost weight, found a new sport.","Sample review text goes here."],["Member name","Joined 3 months ago. Result: first clean Muay Thai kick.","Sample review text goes here."]],
+gal:[["The ring","s1"],["Heavy bags",""],["Muay Thai class",""],["Coaches","s4"],["Sparring",""],["Interior and exterior","s5"]],
+fq:[["Can beginners join?","Yes. Most members start with zero experience, and coaches guide you from your first class."],["Do I have to fight?","No. Train for fitness, skill or confidence. Competing is optional."],["Can I try before paying?","Yes. Book a free trial session using the form below."],["What do I bring?","Training clothes, a towel and a water bottle. Ask the coaches about gloves, wraps and shin guards."],["How do I pay?","Ask the front desk. Add accepted payment methods here."]]
+};
+var $=function(i){return document.getElementById(i)};
+function put(id,arr,fn){$(id).innerHTML=arr.map(fn).join("")}
+put("stats",D.stats,function(s){return '<div><b data-n="'+s[0]+'">0</b><span>'+s[2]+' <i class="sample" style="font-style:normal">'+s[3]+'</i></span></div>'});
+put("why",D.why,function(w){return '<div class="card rv"><h3>'+w[0]+'</h3><p>'+w[1]+'</p></div>'});
+put("cls",D.cls,function(c){return '<div class="card rv"><h3>'+c[0]+'</h3><p>'+c[1]+'</p><small>'+c[2]+'</small></div>'});
+put("tr",D.tr,function(t){return '<div class="card rv"><div class="avatar" role="img" aria-label="Photo placeholder">'+t[0].slice(-3)[0]+'</div><h3>'+t[0]+'</h3><p><b>'+t[1]+'</b> &middot; '+t[2]+'</p><p style="margin-top:8px">'+t[3]+'</p></div>'});
+put("pr",D.pr,function(p){return '<div class="card rv'+(p[4]?' hot':'')+'">'+(p[5]?'<span class="badge">Best value</span>':'')+'<h3>'+p[0]+'</h3><div class="amt">'+p[1]+'<small> '+p[2]+'</small></div><ul>'+p[3].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><a class="btn'+(p[5]?'':' ghost')+'" href="#join">'+p[4]+'</a></div>'});
+/* fix: plan arrays use index 4 label, 5 hot */
+put("pr",D.pr.map(function(p){return [p[0],p[1],p[2],p[3],p[4],p[5]]}),function(p){return '<div class="card rv'+(p[5]?' hot':'')+'">'+(p[5]?'<span class="badge">Best value</span>':'')+'<h3>'+p[0]+'</h3><div class="amt">'+p[1]+'<small> '+p[2]+'</small></div><ul>'+p[3].map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><a class="btn'+(p[5]?'':' ghost')+'" href="#join">'+p[4]+'</a></div>'});
+put("qs",D.qs,function(q){return '<div class="card q rv"><div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>'+q[2]+'</p><div class="who"><b>'+q[0]+'</b><br>'+q[1]+'</div></div>'});
+put("gl",D.gal,function(g){return '<div class="shot '+g[1]+'" role="img" aria-label="'+g[0]+' photo placeholder"><span>'+g[0]+'</span></div>'});
+put("fq",D.fq,function(f){return '<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>'});
+
+/* nav */
+var bg=$("bg"),lk=$("lk");
+bg.onclick=function(){var o=lk.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.innerHTML=o?"&times;":"&#9776;"};
+lk.addEventListener("click",function(e){if(e.target.tagName=="A"){lk.classList.remove("open");bg.setAttribute("aria-expanded","false");bg.innerHTML="&#9776;"}});
+
+/* reveal + counters */
+function count(el){var n=+el.dataset.n,suf=el.parentNode.querySelector("span").textContent.indexOf("rating")>-1,t0=null;
+ (function s(t){t0=t0||t;var k=Math.min((t-t0)/1200,1),v=Math.round(n*k);el.textContent=suf?(v/10).toFixed(1):v+(D.stats.filter(function(x){return x[0]==n})[0][1]);if(k<1)requestAnimationFrame(s)})(performance.now())}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e,i){e.style.transitionDelay=(i%3)*80+"ms";io.observe(e)});
+var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll("[data-n]").forEach(count);io2.unobserve(e.target)}})},{threshold:.4});
+io2.observe($("stats"));
+
+/* barbell */
+var side=[],cols={5:"#3d8bff",10:"#2fb67c",15:"#ffd23f",20:"#e5484d"},hs={5:42,10:60,15:78,20:98};
+function draw(){var st=$("st");st.innerHTML="";var mk=function(w){var p=document.createElement("div");p.className="pl";p.style.height=hs[w]+"px";p.style.background=cols[w];st.appendChild(p)};
+ side.slice().reverse().forEach(mk);side.forEach(mk);
+ var t=20+2*side.reduce(function(a,b){return a+b},0);$("kg").textContent=t+" kg";
+ $("msg").textContent=t<=20?"Add plates. See how far you get.":t<60?"Warm-up weight.":t<100?"Now we are training.":t<140?"That is an alpha lift.":"Call the coach. Someone is showing off.";
+ $("al").style.transform="scale("+(1+Math.min(t,200)/900)+")"}
+document.querySelectorAll(".plates button").forEach(function(b){b.onclick=function(){if(side.length<8){side.push(+b.dataset.w);draw()}else $("msg").textContent="The bar is full. Respect."}});
+$("rs").onclick=function(){side=[];draw()};draw();
+
+/* form: Instagram cannot be prefilled, so copy the message and open the DM */
+$("f").onsubmit=function(e){e.preventDefault();var n=$("n").value.trim(),c=$("c").value.trim();
+ if(!n||!c){$("fm").textContent="Please add your name and a phone or email.";return}
+ var t="Hi Alpha Fitness! I'm "+n+" ("+c+"). I'd like a free trial. My goal: "+$("g").value+".";
+ if(navigator.clipboard)navigator.clipboard.writeText(t).catch(function(){});
+ $("fm").textContent="Message copied. Paste it in our Instagram DM.";
+ window.open("https://ig.me/m/alphafitnessmontalban","_blank","noopener")};
+})();
+</script>
+</body>
+</html>
